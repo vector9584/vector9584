@@ -20,6 +20,7 @@
 | 项目 | 说明 | 技术 |
 |---|---|---|
 | [**nas-search**](https://github.com/vector9584/nas-search) | NAS 全盘文件名秒搜：预建 FTS5 索引替代实时遍历，解决几百万文件里找一个的问题。零第三方依赖，单文件服务端 | Python · SQLite FTS5 |
+| [**esp32-epd-photo**](https://github.com/vector9584/esp32-epd-photo) | 四色墨水屏相册：照片批量量化成四色 C 数组（Atkinson/Bayer 双抖动、EXIF 方向校正），外加 ESP32-S3 网页配网门户 | Python · ESP32-S3 · C++ |
 
 *其他项目在整理中，逐步公开。*
 

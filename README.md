@@ -13,11 +13,14 @@ China University of Geosciences, Beijing
 
 I came to remote sensing through land, not through code. My master's work was about capturing a place in three dimensions; the two years after it went into making land records agree with each other; the PhD is about what changes when you look at the same place twice.
 
-```mermaid
-flowchart LR
-    B["B.Sc. 2023<br/>ecosystem health models"] --> M["M.Sc.<br/>multi-source 3D capture"]
-    M --> I["2023-2025<br/>industrial land data"]
-    I --> P["PhD, now<br/>change detection"]
+```text
+B.Sc. 2023  │  ecosystem models and their dashboard
+            │
+M.Sc.       │  multi-source 3D capture, ICP fusion, SAM
+            │
+2023-2025   │  industrial land data, Chongqing
+            │
+PhD, now    │  monocular depth priors, change detection
 ```
 
 Before the PhD I spent two years at the Chongqing Planning and Natural Resources Information Center, doing data governance for industrial land — reconciling records that were never designed to be reconciled.

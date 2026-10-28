@@ -1,119 +1,85 @@
 <div align="center">
 
-### 王瑞兵
+<table>
+<tr>
+<td align="right" valign="middle">
 
-中国地质大学（北京）&nbsp;·&nbsp;摄影测量与遥感&nbsp;·&nbsp;博士研究生
+<strong>Ruibing Wang</strong><br/>
+China University of Geosciences, Beijing<br/>
+Photogrammetry and Remote Sensing · PhD
 
-<img src="assets/earth-spin-light.gif" width="96" alt="Earth" />
+</td>
+<td align="left" valign="middle">
+<img src="assets/earth-spin.webp" width="92" alt="Earth" />
+</td>
+</tr>
+</table>
 
 </div>
 
-## 关于我
+## About
 
-研究方向聚焦**遥感影像变化检测**与**三维几何感知**，拥有两年政务空间信息化项目工程实践经历。
+Research focuses on change detection in remote sensing imagery and 3D geometric perception, with two years of engineering practice in government spatial information systems.
 
-日常会开发自用工具，涉足自托管服务、NAS 工具、ESP32 嵌入式相关开发，偏向通过代码解决实际业务与生活场景问题。
+I write tools for myself — self-hosted services, NAS utilities, ESP32 firmware — mostly to fix problems that show up in daily work and life.
 
-## 研究与工作经历
+## Research and Experience
 
-| 阶段 | 时间 | 方向 |
+| Stage | Period | Focus |
 | :--- | :--- | :--- |
-| 博士 | 在读 | 单目深度先验与解耦式三维几何感知用于遥感变化检测，稀疏 LiDAR 点云作监督 |
-| 工作 | 2023 – 2025 | 重庆市规划和自然资源信息中心，政务空间信息化 |
-| 硕士 | — | 多源三维数据采集、点云 ICP 配准融合、SAM 图像分割 |
-| 本科 | — | 生态系统模型研究，生态健康评估可视化看板 |
+| PhD | current | Monocular depth priors and decoupled 3D geometric perception for change detection in remote sensing imagery, supervised by sparse LiDAR point clouds |
+| Work | 2023 – 2025 | Chongqing Planning and Natural Resources Information Center |
+| MSc | — | Multi-source 3D acquisition, ICP point cloud registration and fusion, SAM segmentation |
+| BSc | — | Ecosystem modelling, ecological health assessment dashboard |
 
-> [!IMPORTANT]
-> **工作阶段（2023 – 2025）** — 任职于重庆市规划和自然资源信息中心，核心参与重庆「政务·产业用地智治」重大应用建设。
+### Chongqing Planning and Natural Resources Information Center &nbsp;·&nbsp; 2023 – 2025
 
-构建产业用地空间数字底座，归集园区、地块、企业多源业务与空间数据，落地「一园一档、一地一档、一企一档」；基于空间大数据完成产业链集聚分析，实现智能选地模型与大模型自然语言交互能力；配套云上看地、闲置低效用地监测处置、园区动态监管模块，形成 **规划 → 供应 → 监管 → 存量盘活** 的业务闭环，支撑制造业土地要素保障。
+Core contributor to *Government Affairs · Industrial Land Intelligent Governance*, a major municipal application.
 
-## 开源项目
+Built the spatial foundation for industrial land — business and spatial data on parks, parcels and enterprises consolidated from multiple departments into one base, with a single canonical record per park, per parcel and per enterprise. On top of it: industrial chain agglomeration analysis, a site selection model with natural-language interaction, remote land inspection, monitoring and disposal of idle and low-efficiency land, and dynamic park supervision. Together they form a closed loop of **planning → supply → supervision → reactivation of stock**, supporting land element guarantees for manufacturing.
 
-### 长期维护
+## Open Source
+
+### Maintained
 
 #### [rui-calendar](https://github.com/vector9584/rui-calendar)
 
-自托管日历服务，同一套后端数据支撑 Web / iOS / Android / Windows 多端访问。
-
-<details>
-<summary>技术细节</summary>
-
-- 基于 Baikal 实现 CalDAV / CardDAV 协议
-- 前端 React + Electron + PWA，TypeScript 开发
-- 一套数据源，四种客户端形态，不依赖任何第三方日历云
-
-</details>
+Self-hosted calendar serving one backend dataset to web, iOS, Android and Windows clients. CalDAV / CardDAV on Baikal; React + Electron + PWA in TypeScript.
 
 #### [nas-search](https://github.com/vector9584/nas-search)
 
-NAS 文件名毫秒检索工具。
-
-<details>
-<summary>技术细节</summary>
-
-- 预构建 SQLite FTS5 索引，搜索过程不遍历文件系统
-- 纯 Python 实现，零第三方依赖
-- 面向百万级文件名的全盘检索场景
-
-</details>
+Millisecond filename search across a NAS. A prebuilt SQLite FTS5 index answers queries without walking the filesystem. Pure Python, no third-party dependencies.
 
 #### [esp32-epd-photo](https://github.com/vector9584/esp32-epd-photo)
 
-ESP32-S3 驱动四色墨水屏电子相框，适配 800×480 JD79665AA 屏幕。
-
-<details>
-<summary>技术细节</summary>
-
-- Python 侧完成图片四色量化、Atkinson / Bayer 双抖动、EXIF 方向校正
-- 设备端提供 Web 配网页面，无需 App
-- 输出可直接烧写的四色位图数据
-
-</details>
+Four-colour e-paper photo frame driven by an ESP32-S3, built for an 800×480 JD79665AA panel. Python performs four-colour quantisation, Atkinson / Bayer dithering and EXIF orientation correction; the device serves its own WiFi setup page.
 
 #### [nowen-note](https://github.com/vector9584/nowen-note)
 
-自托管笔记应用，Fork 自 [croplfire/nowen-note](https://github.com/croplfire/nowen-note)。
-
-<details>
-<summary>技术细节</summary>
-
-- 支持 Markdown 编辑、思维导图、任务管理、全文检索
-- Docker 一键部署，数据完全自持
-
-</details>
+Self-hosted notes, forked from [croplfire/nowen-note](https://github.com/croplfire/nowen-note). Markdown editing, mind maps, task management, full-text search, deployed with a single Docker command.
 
 #### [agent-field-notes](https://github.com/vector9584/agent-field-notes)
 
-AI Agent 真实设备操作的规则文档，记录运行故障案例与复盘总结。
+Operating rules I gave an AI agent running on real hardware, each one written down after a failure and its post-mortem.
 
-### 过往项目
+### Earlier
 
 #### [eco-monitoring-dashboard](https://github.com/vector9584/eco-monitoring-dashboard)
 
-2023 本科毕设，重庆区域生态健康评估可视化看板。
+Undergraduate thesis, 2023. Ecological health assessment dashboard for the Chongqing region — land use, risk sources and risk receptors on one screen, built with plain ECharts and no build step.
 
-<details>
-<summary>技术细节</summary>
+## Stack
 
-- 基于原生 ECharts 开发，无需编译构建
-- 展示土地利用、风险源、风险受体等业务指标
-- 单屏呈现，面向非技术使用者
-
-</details>
-
-## 技术栈
-
-| 类别 | 内容 |
+| | |
 | :--- | :--- |
-| 编程语言 | `Python` `C++` `TypeScript` `JavaScript` `C` |
-| GIS 与空间技术 | `PostGIS` `Cesium` `Leaflet` `ArcGIS API for JavaScript` |
-| 其他 | `Docker` `ESP32 嵌入式开发` `Unreal Engine` |
+| Languages | `Python` `C++` `TypeScript` `JavaScript` `C` |
+| GIS | `PostGIS` `Cesium` `Leaflet` `ArcGIS API for JavaScript` |
+| Other | `Docker` `ESP32` `Unreal Engine` |
 
-## 链接
+## Elsewhere
 
-个人博客：[vector9584.github.io](https://vector9584.github.io)
+[Blog](https://vector9584.github.io)
 
 ---
 
-做遥感变化检测、空间数据平台或自托管基础设施的同行，欢迎交流。
+If you work on remote sensing, spatial data platforms or self-hosted infrastructure, I would like to hear what you are building.

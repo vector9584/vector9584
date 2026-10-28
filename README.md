@@ -1,12 +1,9 @@
 <div align="center">
 
-<h1>Ruibing Wang</h1>
+<h1>Ruibing Wang <img src="assets/earth-spin.gif" width="44" alt="Earth" align="absmiddle" /></h1>
 
-<sub>PhD Candidate in Photogrammetry and Remote Sensing</sub>
-
+<sub>PhD Candidate in Photogrammetry and Remote Sensing</sub><br/>
 China University of Geosciences, Beijing
-
-<img src="assets/earth-spin.gif" width="92" alt="Earth" />
 
 </div>
 

@@ -1,6 +1,6 @@
 <p align="center"><sub><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a></sub></p>
 
-<h1 align="center">王瑞兵 <img src="assets/earth-spin.gif" width="44" align="absmiddle" hspace="16" alt="" /></h1>
+<h1 align="center">王瑞兵 <img src="https://raw.githubusercontent.com/vector9584/vector9584/main/assets/earth-spin.gif" width="44" align="absmiddle" hspace="16" alt="" /></h1>
 
 <p align="center">
 博士研究生 · <b>测绘工程</b><br/>

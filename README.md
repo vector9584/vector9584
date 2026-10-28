@@ -10,7 +10,7 @@ Photogrammetry and Remote Sensing · PhD
 
 </td>
 <td align="left" valign="middle">
-<img src="assets/earth-spin.webp" width="92" alt="Earth" />
+<img src="assets/earth-spin.gif" width="92" alt="Earth" />
 </td>
 </tr>
 </table>

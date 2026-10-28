@@ -7,6 +7,10 @@ China University of Geosciences, Beijing
 
 <sub>I put spatial data on the web, and my cloud services back on my own server.</sub>
 
+<br/>
+
+**[Interactive Earth →](https://vector9584.github.io/globe/)** &nbsp; 920 KB, no CDN, no build step — it just spins.
+
 </div>
 
 ---
@@ -34,6 +38,11 @@ Outside the lab I write small tools for myself, and keep more ESP32 boards and s
 ## Projects
 
 ### Maintained
+
+**[globe](https://github.com/vector9584/globe)** &nbsp; [live](https://vector9584.github.io/globe/)
+An interactive Earth you can drag. One sphere, one texture, 920 KB in total — three.js vendored in, no CDN, no tile server, no API key. It works offline once loaded.
+
+<kbd>three.js</kbd> <kbd>WebGL</kbd> <kbd>GitHub Pages</kbd>
 
 **[rui-calendar](https://github.com/vector9584/rui-calendar)**
 Self-hosted calendar. One dataset serving web, iOS, Android and Windows clients at the same time — CalDAV/CardDAV on Baikal behind a React + Electron + PWA front end.

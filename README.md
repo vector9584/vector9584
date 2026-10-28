@@ -89,8 +89,11 @@ Most of it is self-hosted, single-binary, and allergic to dependencies. The repo
 
 > **About the avatar**
 >
-> This is Zhenzhen. No publications, no commits, no strong opinions on architecture — her one contribution is luck.
+> This is Zhenzhen — a black cat, which in the right film is either good luck or a glitch.
 >
-> The *zhēn* in her name is the character from 「梦想成真」, so she sits on this profile as a small good omen. Whatever you are building: may it compile on the first try.
+> *"A black cat went past us, and then another that looked just like it."*
+> *"A déjà vu is usually a glitch in the Matrix. It happens when they change something."*
 >
-> She also walks across the keyboard at the worst possible moment. Adopt at your own risk.
+> Nobody established which world she was walking through. The *zhēn* in her name is the character from 「梦想成真」, so she sits on this profile as a small omen: whatever you are building, may it compile on the first try.
+>
+> And if you see her twice, look again at what changed.

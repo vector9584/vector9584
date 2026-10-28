@@ -1,12 +1,20 @@
 <div align="center">
 
-## Ruibing Wang
+### Ruibing Wang
 
 Geomatics PhD student, China University of Geosciences (Beijing)
 
-*I put spatial data on the web, and my cloud services back on my own server.*
-
 </div>
+
+---
+
+One question has run through all three of my degrees: how far can you get from raw measurements to something you can act on?
+
+**Bachelor's** — I built the warning platform behind an ecosystem-health model, so a score computed from fifteen indicators could reach the people who needed it.
+
+**Master's** — I fused drone photogrammetry with handheld laser scans (ICP, RMSE 1.09), pulled individual buildings out of the mesh with SAM (IoU 0.75), and got the whole campus scene running 134.78% faster in Unreal Engine.
+
+**PhD** — the picture stopped being the point. What I care about now is what the data says once the scene exists: spatial analysis, modelling, and the decisions that follow.
 
 ---
 
@@ -34,7 +42,7 @@ Quantizes images into four-color bitmaps with Atkinson or Bayer dithering, corre
 
 <div align="center">
 
-**Tools** &nbsp; Python / TypeScript / React / Vue / C / Docker / Linux / SQLite
+**Tools** &nbsp; Python / JavaScript / TypeScript / Java / C / SQL &nbsp;·&nbsp; PostGIS / Cesium / Leaflet / Unreal Engine
 
 **Elsewhere** &nbsp; [Blog](https://vector9584.github.io) / [Email](mailto:3104260005@email.cugb.edu.cn)
 

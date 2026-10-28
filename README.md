@@ -1,3 +1,5 @@
+<p align="center"><sub><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a></sub></p>
+
 <h1 align="center">Ruibing Wang <img src="assets/earth-spin.gif" width="44" align="absmiddle" hspace="16" alt="" /></h1>
 
 <p align="center">

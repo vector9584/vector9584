@@ -38,6 +38,12 @@ Quantizes images into four-color bitmaps with Atkinson or Bayer dithering, corre
 
 `Python` · `ESP32-S3` · `C++`
 
+**[eco-monitoring-dashboard](https://github.com/vector9584/eco-monitoring-dashboard)** — ecological indicators, six panels, one screen
+
+The presentation layer from my bachelor's thesis: land use, risk sources and risk receptors for Chongqing, drawn with plain ECharts and no build step.
+
+`JavaScript` · `ECharts` · `No build step`
+
 ---
 
 <div align="center">

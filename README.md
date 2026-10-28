@@ -1,17 +1,17 @@
-<h1 align="left">Ruibing Wang <img src="assets/earth-spin.gif" width="46" align="right" alt="" /></h1>
+<h1 align="center">Ruibing Wang <img src="assets/earth-spin.gif" width="46" align="right" alt="" /></h1>
 
-PhD Candidate · **Surveying and Mapping Engineering**  
+<p align="center">
+PhD Candidate · <b>Surveying and Mapping Engineering</b><br/>
 School of Artificial Intelligence, China University of Geosciences, Beijing
+</p>
 
 ---
 
 ## About
 
-A crater's shape is three-dimensional: wall slope, floor roughness, central-peak height, rim relief. Most catalogues still describe it in two — circularity, diameter, depth-to-diameter ratio.
+I work on **3D reconstruction and geometric perception from multi-source data** — fusing UAV oblique photogrammetry with handheld laser scanning, pulling individual structures out of the fused result, and organising multi-scale models so they survive being loaded all at once.
 
-I am working on measuring that geometry properly on the Moon: fusing laser altimetry and stereo imagery into DEMs, extracting 3D morphometric indices from them, and using the fused description to classify craters and explain where they cluster.
-
-Before this I spent two years building government spatial information systems, and before that a master's degree fusing drone photogrammetry with handheld laser scans.
+The interesting part is never the point cloud. It is the seam: where one sensor's strength ends and the other's begins, how the two are registered without trusting either too much, and what "one building" even means when the whole scene arrived as a single mesh.
 
 ## Education & Experience
 
@@ -22,15 +22,14 @@ Before this I spent two years building government spatial information systems, a
 | **2021 – 2024** | M.Eng., Surveying and Mapping Engineering | Chongqing Jiaotong University |
 | **2017 – 2021** | B.Sc., Geographic Information Science | Chongqing Jiaotong University |
 
-### PhD · Lunar crater morphology
+### PhD · 3D reconstruction and geometric perception
 
-Three problems, one pipeline.
+Continuing the master's line rather than restarting it — the same fusion problem, taken further.
 
-- **Morphometry** — extract quantitative 3D indices (depth, volume, mean wall slope, asymmetry, central-peak relative height, rim undulation) from fused DEMs rather than 2D imagery
-- **Classification** — combine geometry with multispectral, thermal and gravity features, then cluster or classify into morphologic types and tie them back to degradation stage
-- **Spatial distribution** — point-pattern analysis where distance is measured along terrain, not on a flat map; separate primary craters, secondaries and volcanic collapses
-
-Data: `LOLA` laser altimetry, `LROC NAC` stereo, multispectral and gravity. Methods: DEM fusion, `SAM`-style segmentation, deep learning on fused geometry.
+- **Registration** — better initial alignment so ICP converges on the right answer instead of a plausible one
+- **Semantics** — segmentation models that turn a mesh into addressable objects with attributes attached
+- **Scale** — organisation and Level-of-Detail strategies that keep city-scale scenes interactive
+- **Perception** — recovering usable geometry from what is cheap to capture, not only from what is expensive
 
 ### 2024 – 2026 · Chongqing Planning and Natural Resources Information Center
 
@@ -45,69 +44,26 @@ Core member of *Smart Industrial Land Governance*, a flagship municipal applicat
 
 ### 2021 – 2024 · Master's thesis
 
-*Multi-scale 3D model integrated expression.* UAV oblique photogrammetry covers large areas but loses near-ground detail under occlusion; handheld laser scanning captures exactly that detail but cannot reach rooftops. The thesis fuses the two.
+*Multi-scale 3D model integrated expression*, Chongqing Jiaotong University.
+
+UAV oblique photogrammetry covers large areas but loses near-ground detail wherever something occludes it. Handheld laser scanning captures precisely that detail but cannot reach rooftops and does not scale by hand. The thesis fuses the two.
 
 - Coarse feature matching before `ICP`, cutting registration iterations — final **RMSE 1.09**
 - `SAM` with text and point prompts to extract building masks, vectorised and bound to attribute records — **IoU 0.75**
 - `Unreal Engine` visualisation with HLOD organisation — mean frame count **+134.78 %**, load latency **−6.25 ms**
 - Applied to viewshed, inundation and contour analysis
 
-### 2017 – 2021 · Undergraduate
+### 2017 – 2021 · Undergraduate thesis
 
-Geographic Information Science. Final project: an ecological health assessment dashboard for Chongqing — land use, risk sources and risk receptors on one screen.
+*Development of an intelligent early-warning platform for complex environmental and ecological risks in Chongqing.*
 
-## Projects
+Fifteen indicators across natural, economic and social systems, weighted by entropy, graded into five alarm levels by natural breaks, and scored per district with a normal cloud model — 38 districts, 2015 against 2019. Risk contracted toward the urban core over those four years, with the sharpest improvement in the northeast.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## Side projects
 
-<b><a href="https://github.com/vector9584/rui-calendar">rui-calendar</a></b><br/>
-Self-hosted calendar. One backend, four clients: Web, iOS, Android and Windows.<br/>
-<sub>TypeScript · React · Electron · PWA · Baikal / CalDAV</sub>
+Nothing here is research. These exist because something in the house annoyed me enough to fix it: a NAS that could not answer "where is that file", a calendar that needed four clients off one dataset, a photo frame that had to run on a battery.
 
-</td>
-<td width="50%" valign="top">
-
-<b><a href="https://github.com/vector9584/nas-search">nas-search</a></b><br/>
-Millisecond filename search across a NAS without walking the filesystem — a pre-built FTS5 index answers every query.<br/>
-<sub>Python · SQLite FTS5 · zero dependencies</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<b><a href="https://github.com/vector9584/esp32-epd-photo">esp32-epd-photo</a></b><br/>
-Four-colour e-paper photo frame for 800×480 JD79665AA panels, with on-device Wi-Fi setup.<br/>
-<sub>ESP32-S3 · C++ · Python · Atkinson / Bayer dithering</sub>
-
-</td>
-<td width="50%" valign="top">
-
-<b><a href="https://github.com/vector9584/nowen-note">nowen-note</a></b><br/>
-Self-hosted notes: Markdown, mind maps, task management, full-text search, one-command Docker deploy.<br/>
-<sub>TypeScript · SQLite · Docker</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<b><a href="https://github.com/vector9584/agent-field-notes">agent-field-notes</a></b><br/>
-Operating rules and incident post-mortems from running AI agents on real hardware — what broke, what fixed it.<br/>
-<sub>Markdown · field reports</sub>
-
-</td>
-<td width="50%" valign="top">
-
-<b><a href="https://github.com/vector9584/eco-monitoring-dashboard">eco-monitoring-dashboard</a></b><br/>
-Ecological health assessment for Chongqing on a single screen. Undergraduate thesis, 2021.<br/>
-<sub>JavaScript · ECharts · no build step</sub>
-
-</td>
-</tr>
-</table>
+Most of it is self-hosted, single-binary, and allergic to dependencies. The repositories are pinned below.
 
 ## Stack
 

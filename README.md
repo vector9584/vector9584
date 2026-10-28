@@ -1,85 +1,82 @@
 <div align="center">
 
-<table>
-<tr>
-<td align="right" valign="middle">
+<h1>Ruibing Wang</h1>
 
-<strong>Ruibing Wang</strong><br/>
-China University of Geosciences, Beijing<br/>
-Photogrammetry and Remote Sensing · PhD
+PhD Candidate in Photogrammetry and Remote Sensing<br/>
+China University of Geosciences, Beijing
 
-</td>
-<td align="left" valign="middle">
 <img src="assets/earth-spin.gif" width="92" alt="Earth" />
-</td>
-</tr>
-</table>
 
 </div>
 
-## About
+## About Me
 
-Research focuses on change detection in remote sensing imagery and 3D geometric perception, with two years of engineering practice in government spatial information systems.
+My research focuses on remote sensing change detection and 3D geometric perception, with two years of engineering experience in government spatial information projects.
 
-I write tools for myself — self-hosted services, NAS utilities, ESP32 firmware — mostly to fix problems that show up in daily work and life.
+Outside the lab I build practical self-hosted tools, NAS utilities and ESP32 embedded projects, solving real-world problems with minimal, purpose-driven code.
 
-## Research and Experience
+## Research & Professional Experience
 
-| Stage | Period | Focus |
-| :--- | :--- | :--- |
-| PhD | current | Monocular depth priors and decoupled 3D geometric perception for change detection in remote sensing imagery, supervised by sparse LiDAR point clouds |
-| Work | 2023 – 2025 | Chongqing Planning and Natural Resources Information Center |
-| MSc | — | Multi-source 3D acquisition, ICP point cloud registration and fusion, SAM segmentation |
-| BSc | — | Ecosystem modelling, ecological health assessment dashboard |
+- **PhD Candidate (current)**
+  Research on remote sensing image change detection using monocular depth priors and decoupled 3D geometric perception, with sparse LiDAR point clouds as supervision.
 
-### Chongqing Planning and Natural Resources Information Center &nbsp;·&nbsp; 2023 – 2025
+- **2023 – 2025 | Chongqing Planning and Natural Resources Information Center**
+  Core member of the *Smart Industrial Land Governance* flagship government application. Built the digital spatial foundation for industrial land management, integrating multi-source park, parcel and enterprise data into standardized "one-file-per-entity" profiles. Delivered spatial big-data analysis for industrial chain agglomeration, intelligent parcel recommendation with LLM-powered natural language interaction, cloud-based remote site inspection, idle/underutilized land monitoring, and cross-departmental disposal workflows. Established a closed-loop management system covering planning, supply, supervision and stock land revitalization to support high-quality manufacturing development.
 
-Core contributor to *Government Affairs · Industrial Land Intelligent Governance*, a major municipal application.
+- **M.Sc.**
+  Multi-source 3D data acquisition, point cloud ICP registration and fusion, and applied research on SAM-based image segmentation.
 
-Built the spatial foundation for industrial land — business and spatial data on parks, parcels and enterprises consolidated from multiple departments into one base, with a single canonical record per park, per parcel and per enterprise. On top of it: industrial chain agglomeration analysis, a site selection model with natural-language interaction, remote land inspection, monitoring and disposal of idle and low-efficiency land, and dynamic park supervision. Together they form a closed loop of **planning → supply → supervision → reactivation of stock**, supporting land element guarantees for manufacturing.
+- **B.Sc. (2023)**
+  Ecosystem modeling and development of an ecological health assessment visualization dashboard.
 
-## Open Source
+## Projects
 
-### Maintained
+### Active Projects
 
 #### [rui-calendar](https://github.com/vector9584/rui-calendar)
 
-Self-hosted calendar serving one backend dataset to web, iOS, Android and Windows clients. CalDAV / CardDAV on Baikal; React + Electron + PWA in TypeScript.
+Self-hosted calendar service with a single backend serving Web, iOS, Android and Windows clients.
+CalDAV/CardDAV protocol powered by Baikal; frontend built with React, Electron and PWA, developed in TypeScript.
 
 #### [nas-search](https://github.com/vector9584/nas-search)
 
-Millisecond filename search across a NAS. A prebuilt SQLite FTS5 index answers queries without walking the filesystem. Pure Python, no third-party dependencies.
+Millisecond-level filename search tool for network-attached storage.
+Pre-built SQLite FTS5 full-text index eliminates filesystem scanning during queries; pure Python implementation with zero third-party dependencies.
 
 #### [esp32-epd-photo](https://github.com/vector9584/esp32-epd-photo)
 
-Four-colour e-paper photo frame driven by an ESP32-S3, built for an 800×480 JD79665AA panel. Python performs four-colour quantisation, Atkinson / Bayer dithering and EXIF orientation correction; the device serves its own WiFi setup page.
+Four-color e-paper photo frame driven by ESP32-S3, for 800×480 JD79665AA panels.
+Python pipeline handles 4-color quantization, Atkinson/Bayer dithering and EXIF orientation correction; on-device web portal for Wi-Fi configuration.
 
 #### [nowen-note](https://github.com/vector9584/nowen-note)
 
-Self-hosted notes, forked from [croplfire/nowen-note](https://github.com/croplfire/nowen-note). Markdown editing, mind maps, task management, full-text search, deployed with a single Docker command.
+Self-hosted note-taking application, forked from [croplfire/nowen-note](https://github.com/croplfire/nowen-note).
+Supports Markdown editing, mind maps, task management and full-text search. One-click Docker deployment.
 
 #### [agent-field-notes](https://github.com/vector9584/agent-field-notes)
 
-Operating rules I gave an AI agent running on real hardware, each one written down after a failure and its post-mortem.
+Operational rules and incident post-mortems for AI agents running on physical hardware.
 
-### Earlier
+### Past Projects
 
 #### [eco-monitoring-dashboard](https://github.com/vector9584/eco-monitoring-dashboard)
 
-Undergraduate thesis, 2023. Ecological health assessment dashboard for the Chongqing region — land use, risk sources and risk receptors on one screen, built with plain ECharts and no build step.
+Undergraduate thesis project (2023). Single-screen visualization dashboard for ecological health assessment in Chongqing.
+Built with vanilla ECharts, no build step required.
 
-## Stack
+## Tech Stack
 
-| | |
+| Category | Stack |
 | :--- | :--- |
 | Languages | `Python` `C++` `TypeScript` `JavaScript` `C` |
-| GIS | `PostGIS` `Cesium` `Leaflet` `ArcGIS API for JavaScript` |
-| Other | `Docker` `ESP32` `Unreal Engine` |
+| GIS & Spatial | `PostGIS` `Cesium` `Leaflet` `ArcGIS API for JavaScript` |
+| Other | `Docker` `ESP32 embedded development` `Unreal Engine` |
 
-## Elsewhere
+## Links
 
-[Blog](https://vector9584.github.io)
+Personal Blog: [vector9584.github.io](https://vector9584.github.io)
 
 ---
 
-If you work on remote sensing, spatial data platforms or self-hosted infrastructure, I would like to hear what you are building.
+> **About the avatar**
+> This is my cat, Zhenzhen. The *zhēn* in her name is the same character from the Chinese well-wish "may your dreams come true". Hope she brings you a little good luck with whatever you're building.

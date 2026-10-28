@@ -1,4 +1,4 @@
-<h1 align="center">Ruibing Wang <img src="assets/earth-spin.gif" width="46" align="right" alt="" /></h1>
+<h1 align="center">Ruibing Wang <img src="assets/earth-spin.gif" width="44" align="absmiddle" hspace="16" alt="" /></h1>
 
 <p align="center">
 PhD Candidate · <b>Surveying and Mapping Engineering</b><br/>
@@ -89,11 +89,6 @@ Most of it is self-hosted, single-binary, and allergic to dependencies. The repo
 
 > **About the avatar**
 >
-> This is Zhenzhen — a black cat, which in the right film is either good luck or a glitch.
+> Zhenzhen. The *zhēn* in her name is the character from 「梦想成真」 — may your dreams come true.
 >
-> *"A black cat went past us, and then another that looked just like it."*
-> *"A déjà vu is usually a glitch in the Matrix. It happens when they change something."*
->
-> Nobody established which world she was walking through. The *zhēn* in her name is the character from 「梦想成真」, so she sits on this profile as a small omen: whatever you are building, may it compile on the first try.
->
-> And if you see her twice, look again at what changed.
+> If you see a black cat walk past twice, that is a glitch in the Matrix. Look at what changed.

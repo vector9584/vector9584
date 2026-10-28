@@ -11,7 +11,9 @@ School of Artificial Intelligence, China University of Geosciences, Beijing
 
 ## About
 
-I work on **3D reconstruction and geometric perception from multi-source data** — fusing UAV oblique photogrammetry with handheld laser scanning, pulling individual structures out of the fused result, and organising multi-scale models so they survive being loaded all at once.
+Spatial data on the web on one side, self-hosted services on the other.
+
+I came into remote sensing through land administration, not through code. The thread running through the work is **3D reconstruction and geometric perception from multi-source data**: fusing UAV oblique photogrammetry with handheld laser scanning, pulling individual structures out of the fused result, and organising multi-scale models so a whole city survives being loaded at once.
 
 The interesting part is never the point cloud. It is the seam: where one sensor's strength ends and the other's begins, how the two are registered without trusting either too much, and what "one building" even means when the whole scene arrived as a single mesh.
 
@@ -24,18 +26,17 @@ The interesting part is never the point cloud. It is the seam: where one sensor'
 | **2021 – 2024** | M.Eng., Surveying and Mapping Engineering | Chongqing Jiaotong University |
 | **2017 – 2021** | B.Sc., Geographic Information Science | Chongqing Jiaotong University |
 
-### PhD · 3D reconstruction and geometric perception
+### PhD · Change detection on remote sensing imagery
 
-Continuing the master's line rather than restarting it — the same fusion problem, taken further.
+A different question from the master's, not a continuation of it: the master's fused two sensors into one scene, this asks what changed between two.
 
-- **Registration** — better initial alignment so ICP converges on the right answer instead of a plausible one
-- **Semantics** — segmentation models that turn a mesh into addressable objects with attributes attached
-- **Scale** — organisation and Level-of-Detail strategies that keep city-scale scenes interactive
-- **Perception** — recovering usable geometry from what is cheap to capture, not only from what is expensive
+- **Task** — change detection on remote sensing imagery
+- **Supervision** — sparse LiDAR point clouds standing in for dense labels
+- **Methods** — monocular depth priors and decoupled 3D geometric perception, brought to bear on that problem
 
 ### 2024 – 2026 · Chongqing Planning and Natural Resources Information Center
 
-Core member of *Smart Industrial Land Governance*, a flagship municipal application. Parks, parcels and enterprises were documented by different departments, so no question that crossed them could be answered.
+Core member of *Smart Industrial Land Governance*, a flagship municipal application. Parks, parcels and enterprises were documented by separate departments, so no question that crossed them could be answered.
 
 - **Spatial foundation** — multi-source park, parcel and enterprise data integrated into one base, with standardised one-file-per-entity profiles
 - **Industrial chain agglomeration** — spatial big-data analysis over that base
@@ -61,11 +62,25 @@ UAV oblique photogrammetry covers large areas but loses near-ground detail where
 
 Fifteen indicators across natural, economic and social systems, weighted by entropy, graded into five alarm levels by natural breaks, and scored per district with a normal cloud model — 38 districts, 2015 against 2019. Risk contracted toward the urban core over those four years, with the sharpest improvement in the northeast.
 
-## Side projects
+## Projects
 
-Nothing here is research. These exist because something in the house annoyed me enough to fix it: a NAS that could not answer "where is that file", a calendar that needed four clients off one dataset, a photo frame that had to run on a battery.
+### Maintained
 
-Most of it is self-hosted, single-binary, and allergic to dependencies. The repositories are pinned below.
+- **rui-calendar** — Self-hosted calendar. One dataset serves four clients — web, iOS, Android, Windows — with React + Electron + PWA in front and Baikal speaking CalDAV/CardDAV behind.
+  `TypeScript` `React` `Electron` `PWA` `CalDAV`
+- **nas-search** — Millisecond filename search across an entire NAS. A prebuilt SQLite FTS5 index means queries never touch the filesystem, and the tool carries zero third-party dependencies.
+  `Python` `SQLite FTS5`
+- **esp32-epd-photo** — Four-colour e-paper photo frame on an ESP32-S3, 800×480, JD79665AA driver. The Python side quantises photos to four colours with Atkinson or Bayer dithering and corrects EXIF orientation; the device serves its own Wi-Fi setup page.
+  `C` `Python` `ESP32-S3`
+- **nowen-note** — Self-hosted notes: Markdown, mind maps, task management, full-text search. Built on the croplfire/nowen-note branch and deployed with a single Docker command.
+  `Docker` `Markdown` `Full-text search`
+- **agent-field-notes** — Operating rules for AI agents driving physical devices, each one paired with the incident that produced it.
+  `Writing` `Agents` `Post-mortems`
+
+### Earlier
+
+- **eco-monitoring-dashboard** — Undergraduate thesis. A single-screen dashboard for ecological health assessment across Chongqing, covering land use, risk sources and risk receptors. Plain ECharts, no build step.
+  `JavaScript` `ECharts`
 
 ## Stack
 

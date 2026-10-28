@@ -44,6 +44,6 @@ Quantizes images into four-color bitmaps with Atkinson or Bayer dithering, corre
 
 **Tools** &nbsp; Python / JavaScript / TypeScript / Java / C / SQL &nbsp;·&nbsp; PostGIS / Cesium / Leaflet / Unreal Engine
 
-**Elsewhere** &nbsp; [Blog](https://vector9584.github.io) / [Email](mailto:3104260005@email.cugb.edu.cn)
+**Elsewhere** &nbsp; [Blog](https://vector9584.github.io) / [Notes on running an agent](https://github.com/vector9584/agent-field-notes) / [Email](mailto:3104260005@email.cugb.edu.cn)
 
 </div>

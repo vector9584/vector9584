@@ -85,6 +85,12 @@ Most of it is self-hosted, single-binary, and allergic to dependencies. The repo
 
 ---
 
+<p align="center"><b>🐈‍⬛</b></p>
+
 > **About the avatar**
 >
-> This is my cat, Zhenzhen. The *zhēn* in her name is the same character from the Chinese well-wish "may your dreams come true". Hope she brings you a little good luck with whatever you're building.
+> This is Zhenzhen. No publications, no commits, no strong opinions on architecture — her one contribution is luck.
+>
+> The *zhēn* in her name is the character from 「梦想成真」, so she sits on this profile as a small good omen. Whatever you are building: may it compile on the first try.
+>
+> She also walks across the keyboard at the worst possible moment. Adopt at your own risk.

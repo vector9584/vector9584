@@ -1,109 +1,134 @@
-<div align="center">
+<h1 align="left">Ruibing Wang <img src="assets/earth-spin.gif" width="46" align="right" alt="" /></h1>
 
-<h1>Ruibing Wang <img src="assets/earth-spin.gif" width="44" alt="Earth" align="absmiddle" /></h1>
-
-<sub>PhD Candidate in Photogrammetry and Remote Sensing</sub><br/>
-China University of Geosciences, Beijing
-
-</div>
+PhD Candidate · **Surveying and Mapping Engineering**  
+School of Artificial Intelligence, China University of Geosciences, Beijing
 
 ---
 
-## About Me
+## About
 
-My research focuses on **remote sensing change detection** and **3D geometric perception**, with two years of engineering experience in government spatial information projects.
+A crater's shape is three-dimensional: wall slope, floor roughness, central-peak height, rim relief. Most catalogues still describe it in two — circularity, diameter, depth-to-diameter ratio.
 
-Outside the lab I build practical self-hosted tools, NAS utilities and ESP32 embedded projects — solving real-world problems with minimal, purpose-driven code.
+I am working on measuring that geometry properly on the Moon: fusing laser altimetry and stereo imagery into DEMs, extracting 3D morphometric indices from them, and using the fused description to classify craters and explain where they cluster.
 
-## Research & Professional Experience
+Before this I spent two years building government spatial information systems, and before that a master's degree fusing drone photogrammetry with handheld laser scans.
 
-| Stage | Period | Focus |
+## Education & Experience
+
+| Period | Position | Institution |
 | :--- | :--- | :--- |
-| **PhD** | current | Change detection via monocular depth priors and decoupled 3D geometric perception, supervised by sparse LiDAR point clouds |
-| **Industry** | 2023 – 2025 | Spatial data foundation and land governance, Chongqing |
-| **M.Sc.** | — | Multi-source 3D acquisition, point cloud ICP registration and fusion, SAM-based image segmentation |
-| **B.Sc.** | 2023 | Ecosystem modeling, ecological health assessment dashboard |
+| **2026 –** | PhD, Surveying and Mapping Engineering | China University of Geosciences, Beijing · School of Artificial Intelligence |
+| **2024 – 2026** | Engineer, spatial information systems | Chongqing Planning and Natural Resources Information Center |
+| **2021 – 2024** | M.Eng., Surveying and Mapping Engineering | Chongqing Jiaotong University |
+| **2017 – 2021** | B.Sc., Geographic Information Science | Chongqing Jiaotong University |
 
-### 2023 – 2025 &nbsp;·&nbsp; Chongqing Planning and Natural Resources Information Center
+### PhD · Lunar crater morphology
 
-> Core member of *Smart Industrial Land Governance*, a flagship municipal application.
+Three problems, one pipeline.
 
-The problem was fragmentation: parks, parcels and enterprises were documented by different departments, so no question that crossed them could be answered.
+- **Morphometry** — extract quantitative 3D indices (depth, volume, mean wall slope, asymmetry, central-peak relative height, rim undulation) from fused DEMs rather than 2D imagery
+- **Classification** — combine geometry with multispectral, thermal and gravity features, then cluster or classify into morphologic types and tie them back to degradation stage
+- **Spatial distribution** — point-pattern analysis where distance is measured along terrain, not on a flat map; separate primary craters, secondaries and volcanic collapses
 
-- **Spatial foundation** — multi-source park, parcel and enterprise data integrated into one base, with standardized one-file-per-entity profiles
-- **Industrial chain agglomeration** — spatial big-data analysis built on that base
+Data: `LOLA` laser altimetry, `LROC NAC` stereo, multispectral and gravity. Methods: DEM fusion, `SAM`-style segmentation, deep learning on fused geometry.
+
+### 2024 – 2026 · Chongqing Planning and Natural Resources Information Center
+
+Core member of *Smart Industrial Land Governance*, a flagship municipal application. Parks, parcels and enterprises were documented by different departments, so no question that crossed them could be answered.
+
+- **Spatial foundation** — multi-source park, parcel and enterprise data integrated into one base, with standardised one-file-per-entity profiles
+- **Industrial chain agglomeration** — spatial big-data analysis over that base
 - **Intelligent parcel recommendation** — site selection with LLM-powered natural language interaction
-- **Cloud-based remote site inspection** — review without field visits
-- **Idle land governance** — monitoring and cross-departmental disposal of underutilized parcels
-- **Closed loop** — `planning → supply → supervision → stock revitalization`, supporting high-quality manufacturing development
+- **Remote site inspection** — cloud-based review without field visits
+- **Idle land governance** — monitoring and cross-departmental disposal of underutilised parcels
+- **Closed loop** — `planning → supply → supervision → stock revitalisation`
 
-### PhD Candidate &nbsp;·&nbsp; current
+### 2021 – 2024 · Master's thesis
 
-Remote sensing image change detection using **monocular depth priors** and **decoupled 3D geometric perception**, with **sparse LiDAR point clouds** as supervision.
+*Multi-scale 3D model integrated expression.* UAV oblique photogrammetry covers large areas but loses near-ground detail under occlusion; handheld laser scanning captures exactly that detail but cannot reach rooftops. The thesis fuses the two.
 
-### M.Sc.
+- Coarse feature matching before `ICP`, cutting registration iterations — final **RMSE 1.09**
+- `SAM` with text and point prompts to extract building masks, vectorised and bound to attribute records — **IoU 0.75**
+- `Unreal Engine` visualisation with HLOD organisation — mean frame count **+134.78 %**, load latency **−6.25 ms**
+- Applied to viewshed, inundation and contour analysis
 
-Multi-source 3D data acquisition, point cloud **ICP** registration and fusion, and applied research on **SAM**-based image segmentation.
+### 2017 – 2021 · Undergraduate
 
-### B.Sc. &nbsp;·&nbsp; 2023
-
-Ecosystem modeling and development of an ecological health assessment visualization dashboard.
+Geographic Information Science. Final project: an ecological health assessment dashboard for Chongqing — land use, risk sources and risk receptors on one screen.
 
 ## Projects
 
-### Active
+<table>
+<tr>
+<td width="50%" valign="top">
 
-#### [rui-calendar](https://github.com/vector9584/rui-calendar)
+<b><a href="https://github.com/vector9584/rui-calendar">rui-calendar</a></b><br/>
+Self-hosted calendar. One backend, four clients: Web, iOS, Android and Windows.<br/>
+<sub>TypeScript · React · Electron · PWA · Baikal / CalDAV</sub>
 
-Self-hosted calendar service. One backend, four clients: Web, iOS, Android and Windows.
+</td>
+<td width="50%" valign="top">
 
-CalDAV/CardDAV on `Baikal`; frontend in `React` + `Electron` + `PWA`, written in `TypeScript`.
+<b><a href="https://github.com/vector9584/nas-search">nas-search</a></b><br/>
+Millisecond filename search across a NAS without walking the filesystem — a pre-built FTS5 index answers every query.<br/>
+<sub>Python · SQLite FTS5 · zero dependencies</sub>
 
-#### [nas-search](https://github.com/vector9584/nas-search)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Millisecond filename search across a NAS, without walking the filesystem.
+<b><a href="https://github.com/vector9584/esp32-epd-photo">esp32-epd-photo</a></b><br/>
+Four-colour e-paper photo frame for 800×480 JD79665AA panels, with on-device Wi-Fi setup.<br/>
+<sub>ESP32-S3 · C++ · Python · Atkinson / Bayer dithering</sub>
 
-A pre-built `SQLite FTS5` full-text index answers every query. Pure `Python`, zero third-party dependencies.
+</td>
+<td width="50%" valign="top">
 
-#### [esp32-epd-photo](https://github.com/vector9584/esp32-epd-photo)
+<b><a href="https://github.com/vector9584/nowen-note">nowen-note</a></b><br/>
+Self-hosted notes: Markdown, mind maps, task management, full-text search, one-command Docker deploy.<br/>
+<sub>TypeScript · SQLite · Docker</sub>
 
-Four-colour e-paper photo frame on `ESP32-S3`, built for an 800×480 `JD79665AA` panel.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-The `Python` pipeline handles four-colour quantization, `Atkinson` / `Bayer` dithering and EXIF orientation correction; the device serves its own Wi-Fi setup page.
+<b><a href="https://github.com/vector9584/agent-field-notes">agent-field-notes</a></b><br/>
+Operating rules and incident post-mortems from running AI agents on real hardware — what broke, what fixed it.<br/>
+<sub>Markdown · field reports</sub>
 
-#### [nowen-note](https://github.com/vector9584/nowen-note)
+</td>
+<td width="50%" valign="top">
 
-Self-hosted note-taking application[^1]. Markdown editing, mind maps, task management and full-text search.
+<b><a href="https://github.com/vector9584/eco-monitoring-dashboard">eco-monitoring-dashboard</a></b><br/>
+Ecological health assessment for Chongqing on a single screen. Undergraduate thesis, 2021.<br/>
+<sub>JavaScript · ECharts · no build step</sub>
 
-One-click `Docker` deployment.
+</td>
+</tr>
+</table>
 
-#### [agent-field-notes](https://github.com/vector9584/agent-field-notes)
+## Stack
 
-Operating rules and incident post-mortems for AI agents running on physical hardware.
+**Languages**  
+<kbd>Python</kbd> <kbd>TypeScript</kbd> <kbd>JavaScript</kbd> <kbd>C++</kbd> <kbd>C</kbd> <kbd>Java</kbd>
 
-### Earlier
+**Geospatial**  
+<kbd>PostGIS</kbd> <kbd>Cesium</kbd> <kbd>Leaflet</kbd> <kbd>Mapbox GL</kbd> <kbd>ArcGIS API</kbd> <kbd>GDAL</kbd>
 
-#### [eco-monitoring-dashboard](https://github.com/vector9584/eco-monitoring-dashboard)
+**3D & rendering**  
+<kbd>Unreal Engine</kbd> <kbd>Three.js</kbd> <kbd>Blender</kbd> <kbd>CloudCompare</kbd>
 
-Undergraduate thesis, 2023. Ecological health assessment for Chongqing on one screen — land use, risk sources and risk receptors.
+**Infrastructure & hardware**  
+<kbd>Docker</kbd> <kbd>Linux</kbd> <kbd>SQLite FTS5</kbd> <kbd>ESP32-S3</kbd>
 
-Vanilla `ECharts`, no build step.
+## Elsewhere
 
-## Tech Stack
-
-| Category | Stack |
-| :--- | :--- |
-| **Languages** | `Python` `C++` `TypeScript` `JavaScript` `C` |
-| **GIS & spatial** | `PostGIS` `Cesium` `Leaflet` `ArcGIS API for JavaScript` |
-| **Other** | `Docker` `ESP32 embedded` `Unreal Engine` |
-
-## Links
-
-[Blog](https://vector9584.github.io) &nbsp;·&nbsp; [GitHub](https://github.com/vector9584)
+[vector9584.github.io](https://vector9584.github.io)
 
 ---
 
 > **About the avatar**
+>
 > This is my cat, Zhenzhen. The *zhēn* in her name is the same character from the Chinese well-wish "may your dreams come true". Hope she brings you a little good luck with whatever you're building.
-
-[^1]: Forked from [croplfire/nowen-note](https://github.com/croplfire/nowen-note).

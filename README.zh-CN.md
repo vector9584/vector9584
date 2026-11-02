@@ -68,6 +68,10 @@
 
 - **rui-calendar** — 自建日历服务。一套数据源同时供 Web、iOS、Android、Windows 四端使用，前端 React + Electron + PWA，后端由 Baikal 提供 CalDAV/CardDAV。
   `TypeScript` `React` `Electron` `PWA` `CalDAV`
+- **homestead** — 自建个人门户。卡片墙是直接读真实目录生成的，多建一个文件夹就多一个入口。权限只有一个字段——用户名到目录列表，而标记「管理员」的那个值同时也是「全都能看」。未登录的人照样能往暂存区放东西，页面就地弹登录框，不把人甩到 401。
+  `PHP` `Nginx` `WebDAV` `原生 JS`
+- **voice-lab** — 在自己机器上做零样本声纹克隆。IndexTTS 跑在隧道后面的 GPU 机器上，NAS 侧的工作台管住从原始录音到成品音频的六个阶段，每一种情绪先按三层参考音依次往下找，最后才退回 8 维情感向量。
+  `Python` `IndexTTS` `FastAPI` `音频`
 - **nas-search** — 全 NAS 文件名毫秒级搜索。基于预建的 SQLite FTS5 全文索引，搜索过程不访问文件系统，工具本身零第三方依赖。
   `Python` `SQLite FTS5`
 - **esp32-epd-photo** — ESP32-S3 驱动的四色墨水屏相框，800×480，驱动芯片 JD79665AA。Python 端把照片量化到四色，支持 Atkinson、Bayer 两种抖动，并自动校正 EXIF 方向；设备端自带 Web 配网页。

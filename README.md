@@ -68,6 +68,10 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
 
 - **rui-calendar** — Self-hosted calendar. One dataset serves four clients — web, iOS, Android, Windows — with React + Electron + PWA in front and Baikal speaking CalDAV/CardDAV behind.
   `TypeScript` `React` `Electron` `PWA` `CalDAV`
+- **homestead** — Self-hosted personal portal. The card index is built by reading the real directories, so adding a folder adds a page. Permission is a single field — user to directory list — and the same value that marks an admin also means "sees everything". Unauthenticated visitors still get to drop files; the page asks for a login inline instead of throwing them at a 401.
+  `PHP` `Nginx` `WebDAV` `Vanilla JS`
+- **voice-lab** — Zero-shot voice cloning on your own hardware. IndexTTS runs on a GPU box behind a tunnel, a workbench on the NAS owns the six stages from raw recording to finished audio, and every emotion resolves through three tiers of reference audio before falling back to an eight-dimensional vector.
+  `Python` `IndexTTS` `FastAPI` `Audio`
 - **nas-search** — Millisecond filename search across an entire NAS. A prebuilt SQLite FTS5 index means queries never touch the filesystem, and the tool carries zero third-party dependencies.
   `Python` `SQLite FTS5`
 - **esp32-epd-photo** — Four-colour e-paper photo frame on an ESP32-S3, 800×480, JD79665AA driver. The Python side quantises photos to four colours with Atkinson or Bayer dithering and corrects EXIF orientation; the device serves its own Wi-Fi setup page.

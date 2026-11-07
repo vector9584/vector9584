@@ -106,10 +106,10 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
 
 ---
 
-<p align="center"><b>🐈‍⬛</b></p>
+<p align="center"><b>🐈‍⬛🐈‍⬛</b></p>
 
 > **About the avatar**
 >
 > Zhenzhen. The *zhēn* in her name is the character from 「梦想成真」 — may your dreams come true.
 >
-> If you see a black cat walk past twice, that is a glitch in the Matrix. Look at what changed.
+> There are two of her now. Can't tell which one moved — that is the glitch in the Matrix. Look at what changed.

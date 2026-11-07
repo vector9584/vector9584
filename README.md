@@ -112,4 +112,4 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
 >
 > Zhenzhen. The *zhēn* in her name is the character from 「梦想成真」 — may your dreams come true.
 >
-> There are two of her now. Can't tell which one moved — that is the glitch in the Matrix. Look at what changed.
+> If you see a black cat walk past twice, that is a glitch in the Matrix. Look at what changed.

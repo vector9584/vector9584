@@ -66,7 +66,7 @@
 
 ### 维护中
 
-- **rui-calendar** — 自建日历服务。一套数据源同时供 Web、iOS、Android、Windows 四端使用，前端 React + Electron + PWA，后端由 Baikal 提供 CalDAV/CardDAV。
+- **rui-calendar** — 自建日历服务。一套数据源同时供 Web、iOS/Android、以及 Windows / macOS / Linux 桌面端使用；前端 React + PWA，后端由 Baikal 提供 CalDAV/CardDAV，桌面端 1.2.0 起离线也能读能写。
   `TypeScript` `React` `Electron` `PWA` `CalDAV`
 - **homestead** — 自建个人门户。卡片墙是直接读真实目录生成的，多建一个文件夹就多一个入口。权限只有一个字段——用户名到目录列表，而标记「管理员」的那个值同时也是「全都能看」。未登录的人照样能往暂存区放东西，页面就地弹登录框，不把人甩到 401。
   `PHP` `Nginx` `WebDAV` `原生 JS`

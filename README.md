@@ -66,7 +66,7 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
 
 ### Maintained
 
-- **rui-calendar** — Self-hosted calendar. One dataset serves four clients — web, iOS, Android, Windows — with React + Electron + PWA in front and Baikal speaking CalDAV/CardDAV behind.
+- **rui-calendar** — Self-hosted calendar. One dataset serves four clients — web, iOS/Android, and desktop on Windows, macOS and Linux — with React + PWA in front, Baikal speaking CalDAV/CardDAV behind, and an Electron 1.2.0 desktop client that keeps reading and writing while offline.
   `TypeScript` `React` `Electron` `PWA` `CalDAV`
 - **homestead** — Self-hosted personal portal. The card index is built by reading the real directories, so adding a folder adds a page. Permission is a single field — user to directory list — and the same value that marks an admin also means "sees everything". Unauthenticated visitors still get to drop files; the page asks for a login inline instead of throwing them at a 401.
   `PHP` `Nginx` `WebDAV` `Vanilla JS`

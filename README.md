@@ -70,6 +70,8 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
   `TypeScript` `React` `Electron` `PWA` `CalDAV` `Android`
 - **homestead** — Self-hosted personal portal. The card index is built by reading the real directories, so adding a folder adds a page. Permission is a single field — user to directory list — and the same value that marks an admin also means "sees everything". Unauthenticated visitors still get to drop files; the page asks for a login inline instead of throwing them at a 401.
   `PHP` `Nginx` `WebDAV` `Vanilla JS`
+- **fnos-hermes-panel** — Engineering refactor of the Hermes Agent control panel on fnOS. A 12,325-line monolith became a 53-module responsibility chain: each module owns one route prefix and returns `null` to pass the request on, so a new feature never has to touch the old branches. Deployment moved from `cp` to plan → preflight → stage → apply with a per-file sha256 manifest, which made rollback something to rehearse rather than hope for. A derived branch of iranee/veenyi under GPL-3.0.
+  `Node.js` `Refactoring` `Release engineering` `GPL-3.0`
 - **voice-lab** — Zero-shot voice cloning on your own hardware. IndexTTS runs on a GPU box behind a tunnel, a workbench on the NAS owns the six stages from raw recording to finished audio, and every emotion resolves through three tiers of reference audio before falling back to an eight-dimensional vector.
   `Python` `IndexTTS` `FastAPI` `Audio`
 - **nas-search** — Millisecond filename search across an entire NAS. A prebuilt SQLite FTS5 index means queries never touch the filesystem, and the tool carries zero third-party dependencies.

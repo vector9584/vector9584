@@ -66,8 +66,8 @@ Fifteen indicators across natural, economic and social systems, weighted by entr
 
 ### Maintained
 
-- **rui-calendar** — Self-hosted calendar. One dataset serves four clients — web, iOS/Android, and desktop on Windows, macOS and Linux — with React + PWA in front, Baikal speaking CalDAV/CardDAV behind, and an Electron 1.2.0 desktop client that keeps reading and writing while offline.
-  `TypeScript` `React` `Electron` `PWA` `CalDAV`
+- **rui-calendar** — Self-hosted calendar. One dataset, five ways in: web (React + PWA), iOS and Android system calendars over CalDAV, an Android APK, and an Electron desktop app for Windows, macOS and Linux that keeps reading and writing while offline. Baikal speaks CalDAV/CardDAV underneath, and the same GitHub Actions pipeline builds and signs both the APK and the desktop installers.
+  `TypeScript` `React` `Electron` `PWA` `CalDAV` `Android`
 - **homestead** — Self-hosted personal portal. The card index is built by reading the real directories, so adding a folder adds a page. Permission is a single field — user to directory list — and the same value that marks an admin also means "sees everything". Unauthenticated visitors still get to drop files; the page asks for a login inline instead of throwing them at a 401.
   `PHP` `Nginx` `WebDAV` `Vanilla JS`
 - **voice-lab** — Zero-shot voice cloning on your own hardware. IndexTTS runs on a GPU box behind a tunnel, a workbench on the NAS owns the six stages from raw recording to finished audio, and every emotion resolves through three tiers of reference audio before falling back to an eight-dimensional vector.

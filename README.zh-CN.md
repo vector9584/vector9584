@@ -69,6 +69,7 @@
 - **rui-calendar** — 自建日历服务。一套数据源，五个入口：Web（React + PWA）、iOS 与 Android 系统日历（CalDAV 直连）、Android APK 客户端，以及 Windows / macOS / Linux 桌面端；后端由 Baikal 提供 CalDAV/CardDAV，桌面端 1.2.0 起离线也能读能写。APK 和桌面安装包由同一条 GitHub Actions 流水线构建并签名。
   `TypeScript` `React` `Electron` `PWA` `CalDAV` `Android`
 - **homestead** — 自建个人门户。卡片墙是直接读真实目录生成的，多建一个文件夹就多一个入口。权限只有一个字段——用户名到目录列表，而标记「管理员」的那个值同时也是「全都能看」。未登录的人照样能往暂存区放东西，页面就地弹登录框，不把人甩到 401。
+- **fnos-hermes-panel** — fnOS 上 Hermes Agent 控制面板的工程化重构。12,325 行的单体拆成 53 个模块的责任链：每个模块认领一段路由前缀，不归自己就返回 `null` 往下传，加功能不用碰老分支。部署从 `cp` 改成 plan → preflight → stage → apply，每一步留一份逐文件 sha256 清单，回滚因此可以演练，而不是靠祈祷。GPL-3.0，派生自 iranee/veenyi 上游。
   `PHP` `Nginx` `WebDAV` `原生 JS`
 - **voice-lab** — 在自己机器上做零样本声纹克隆。IndexTTS 跑在隧道后面的 GPU 机器上，NAS 侧的工作台管住从原始录音到成品音频的六个阶段，每一种情绪先按三层参考音依次往下找，最后才退回 8 维情感向量。
   `Python` `IndexTTS` `FastAPI` `音频`
